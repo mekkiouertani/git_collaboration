@@ -97,3 +97,5 @@ php artisan make:controller NomeController
 # creo le views relative
 
 ```
+
+Commmit di fra
