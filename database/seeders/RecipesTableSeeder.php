@@ -16,6 +16,13 @@ class RecipesTableSeeder extends Seeder
     public function run()
     {
         $recipes = config('db.recipes');
+        foreach ($recipes as $recipe) {
+            $newRecipe = new Recipe();
+            $newRecipe->title = $recipe['title'];
+            $newRecipe->image = $recipe['image'];
 
+
+            $newRecipe->save();
+        }
     }
 }
